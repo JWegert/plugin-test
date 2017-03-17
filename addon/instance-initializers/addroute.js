@@ -1,8 +1,9 @@
 import Ember from 'ember';
 
-export function initialize(applicationInstance) {
+export function initialize() {
 
-	let router = applicationInstance.lookup('router:main');
+	//let router = applicationInstance.lookupFactory('router:main');
+	let router = Ember.getOwner(this).lookup('router:main');
 
   router.map(function(){
 	this.route('gittest');
