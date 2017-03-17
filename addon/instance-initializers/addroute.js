@@ -10,6 +10,6 @@ export function initialize(applicationInstance) {
 }
 
 export default {
-  name: 'addrouter',
+  name: 'addroute',
   initialize
 };
