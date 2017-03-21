@@ -6,7 +6,7 @@ export default Ember.Component.extend({
   message: 'test',
   actions: {
   	pressMe: function () {
-  		var testText = this.get('pluginTest').updateObject;
+  		var testText = this.get('pluginTest').updateObject();
   		this.set('message', testText);
   		//console.log(this.get('pluginTest').isAuthenticated);
   	}
