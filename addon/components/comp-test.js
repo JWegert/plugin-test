@@ -2,7 +2,7 @@ import Ember from 'ember';
 import layout from '../templates/components/comp-test';
 
 export default Ember.Component.extend({
-  plugintest: inject.service(),
+  hostService: Ember.inject.service('plugintest'),
   message: 'test',
   actions: {
   	pressMe: function () {
