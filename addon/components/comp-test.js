@@ -1,5 +1,4 @@
 import Ember from 'ember';
-import layout from '../templates/components/comp-test';
 
 
 export default Ember.Component.extend({
