@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import layout from '../templates/components/comp-test';
+import layout from '../templates/gittest';
 
 export default Ember.Component.extend({
   pluginTest: Ember.inject.service('plugintest'),
