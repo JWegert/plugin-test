@@ -9,7 +9,7 @@ let router = applicationInstance.__container__.lookupFactory('router:main');
 
   navbarService: Ember.inject.service('navbar'),
 activate(){
-	this.get('navbarService').navbarLabels.addObject('another');
+	this.get('navbarService').navbarLabels.addObject('gittest');
 }
 
 }
