@@ -6,7 +6,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
 
 navbarService: Ember.inject.service('navbar'),
 
-activate(){
+init(){
 	this.get('navbarService').navbarLabels.addObject('gittest');
 },
 	
