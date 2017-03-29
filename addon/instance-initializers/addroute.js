@@ -6,7 +6,7 @@ let app = applicationInstance.lookup('route:application');
 
 navbarService: Ember.inject.service('navbar'),
 
-app.get('navbarService').navbarLabels.addObject('gittest');
+app.get('navbarService').navbarLabels.pushObject('gittest');
 
 
   router.map(function(){
