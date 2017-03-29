@@ -2,6 +2,12 @@ import Ember from 'ember';
 
 export function initialize(applicationInstance) {
 let router = applicationInstance.__container__.lookupFactory('router:main');
+let app = applicationInstance.lookup('route:application');
+
+navbarService: Ember.inject.service('navbar'),
+
+app.get('navbarService').navbarLabels.addObject('gittest');
+
 
   router.map(function(){
 	this.route('gittest');

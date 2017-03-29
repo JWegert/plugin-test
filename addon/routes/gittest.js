@@ -4,10 +4,10 @@ import AuthenticatedRouteMixin from 'ember-simple-auth/mixins/authenticated-rout
 
 export default Ember.Route.extend(AuthenticatedRouteMixin, {
 
-navbarService: Ember.inject.service('navbar'),
+// navbarService: Ember.inject.service('navbar'),
 
-init(){
-	this.get('navbarService').navbarLabels.addObject('gittest');
-},
+// init(){
+// 	this.get('navbarService').navbarLabels.addObject('gittest');
+// },
 	
 });
