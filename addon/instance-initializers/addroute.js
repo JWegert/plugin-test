@@ -6,9 +6,10 @@ let app = applicationInstance.lookup('route:application');
 
 navbarService: Ember.inject.service('navbar'),
 
+//add button tonavigation menu
 app.get('navbarService').navbarLabels.pushObject('gittest');
 
-
+//add route to application's router.js
   router.map(function(){
 	this.route('gittest');
 });
