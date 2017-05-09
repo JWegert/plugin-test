@@ -4,14 +4,12 @@ import layout from '../templates/components/comp-test'
 
 export default Ember.Component.extend({
 	layout,
-  pluginTest: Ember.inject.service("landscape-reload"),
-  message: 'test',
+  message: '',
   actions: {
   	pressMe: function () {
-  		var testText = this.get('pluginTest').updateObject();
+  		var testText = 'Hello World!';
   		this.set('message', testText);
-  		//console.log(this.get('pluginTest').isAuthenticated);
-  	}
+  		}
   }
 });
 
