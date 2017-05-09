@@ -7,11 +7,11 @@ let app = applicationInstance.lookup('route:application');
 navbarService: Ember.inject.service('navbar'),
 
 //add label for button to navigation menu
-app.get('navbarService').navbarLabels.pushObject('gittest');
+app.get('navbarService').navbarLabels.pushObject('addon');
 
 //add route to application's router.js
   router.map(function(){
-	this.route('gittest');
+	this.route('addon');
 });
 
 
