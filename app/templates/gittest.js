@@ -1,1 +1,1 @@
-export { default } from 'ember-cli-test-plugin/templates/gittest';
+export { default } from 'ember-cli-test-plugin/templates/addon';
